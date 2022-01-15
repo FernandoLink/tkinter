@@ -1,9 +1,8 @@
 from tkinter import *
-from settings import Settings
 
 
 class NameWidget(Frame):
-    def __init__(self, master):
+    def __init__(self, parent):
         super().__init__()
         self['height'] = 150
         self['width'] = 200
@@ -18,5 +17,8 @@ class NameWidget(Frame):
 
 window = Tk()
 window.title('Login')
-frame = NameWidget(window).grid()
+frame1 = NameWidget(window).grid()
+frame2 = NameWidget(window).grid()
+frame3 = NameWidget(window).grid()
+frame4 = NameWidget(window).grid()
 window = mainloop()
